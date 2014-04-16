@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="oh6-pA-CdE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xZi-SI-qcw">
+            <objects>
+                <viewController id="oh6-pA-CdE" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mph-NW-QLb"/>
+                        <viewControllerLayoutGuide type="bottom" id="PiR-SW-J37"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XXN-L3-m8c">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KnB-l6-NLd">
+                                <rect key="frame" x="20" y="32" width="728" height="645"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap &quot;Start&quot; To Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzC-xc-Mm3">
+                                        <rect key="frame" x="160" y="283" width="409" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="48J-99-jtY"/>
+                                            <constraint firstAttribute="width" constant="409" id="Wzu-UF-Md7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="fzC-xc-Mm3" firstAttribute="top" secondItem="KnB-l6-NLd" secondAttribute="top" constant="283" id="W3P-92-6C8"/>
+                                    <constraint firstItem="fzC-xc-Mm3" firstAttribute="centerX" secondItem="KnB-l6-NLd" secondAttribute="centerX" id="gPt-2w-81g"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="F7U-g4-Lia" appends="YES" id="d2G-Lf-FBe"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Is Inactive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3N-7J-id3">
+                                <rect key="frame" x="162" y="748" width="445" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mgk-wi-FX7"/>
+                                    <constraint firstAttribute="width" constant="445" id="Q8E-rh-D2p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqs-05-e1Q">
+                                <rect key="frame" x="313" y="888" width="143" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="IHo-Av-Gkk"/>
+                                    <constraint firstAttribute="height" constant="40" id="l68-RH-HBE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopRecording:" destination="oh6-pA-CdE" eventType="touchUpInside" id="TtX-92-Ijy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PiR-SW-J37" firstAttribute="top" secondItem="Xqs-05-e1Q" secondAttribute="bottom" constant="96" id="FFD-jo-XkQ"/>
+                            <constraint firstItem="KnB-l6-NLd" firstAttribute="top" secondItem="Mph-NW-QLb" secondAttribute="bottom" constant="12" id="IeH-Tq-6P8"/>
+                            <constraint firstItem="d3N-7J-id3" firstAttribute="top" secondItem="KnB-l6-NLd" secondAttribute="bottom" constant="71" id="VzL-zt-shV"/>
+                            <constraint firstItem="d3N-7J-id3" firstAttribute="centerX" secondItem="Xqs-05-e1Q" secondAttribute="centerX" id="bTO-3u-2q0"/>
+                            <constraint firstItem="Xqs-05-e1Q" firstAttribute="top" secondItem="d3N-7J-id3" secondAttribute="bottom" constant="90" id="f6j-Yn-ZWD"/>
+                            <constraint firstAttribute="trailing" secondItem="KnB-l6-NLd" secondAttribute="trailing" constant="20" symbolic="YES" id="k5c-jK-OmF"/>
+                            <constraint firstItem="KnB-l6-NLd" firstAttribute="centerX" secondItem="d3N-7J-id3" secondAttribute="centerX" id="qYk-8E-DC5"/>
+                            <constraint firstItem="KnB-l6-NLd" firstAttribute="leading" secondItem="XXN-L3-m8c" secondAttribute="leading" constant="20" symbolic="YES" id="yfO-Tu-sdN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnItemStart" destination="Xqs-05-e1Q" id="C4l-QK-9ft"/>
+                        <outlet property="lblCurrentStatus" destination="d3N-7J-id3" id="R6N-6k-Jdj"/>
+                        <outlet property="viewPreview" destination="KnB-l6-NLd" id="oMq-AQ-TS6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCP-OT-r68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="F7U-g4-Lia">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="oh6-pA-CdE" id="gzE-bd-oyk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-141" y="-201"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

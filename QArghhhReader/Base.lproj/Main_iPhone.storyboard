@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcY-fw-v1Q">
+                                <rect key="frame" x="20" y="33" width="280" height="257"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap &quot;Start&quot; To Begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoP-e2-yjQ">
+                                        <rect key="frame" x="62" y="118" width="156" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="PoP-e2-yjQ" firstAttribute="centerY" secondItem="NcY-fw-v1Q" secondAttribute="centerY" id="nI8-lI-4gj"/>
+                                    <constraint firstItem="PoP-e2-yjQ" firstAttribute="centerX" secondItem="NcY-fw-v1Q" secondAttribute="centerX" id="oeQ-Fw-97P"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gOC-Nu-cR8" appends="YES" id="MXn-dT-UYa"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3g-d8-gww">
+                                <rect key="frame" x="139" y="409" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR is Inactive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8Z-cR-6xj">
+                                <rect key="frame" x="20" y="334" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3l-cf-Qx6">
+                                <rect key="frame" x="144" y="394" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sqE-YP-xnB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G3l-cf-Qx6" firstAttribute="centerY" secondItem="g3g-d8-gww" secondAttribute="centerY" id="32f-2w-nuI"/>
+                            <constraint firstItem="N8Z-cR-6xj" firstAttribute="top" secondItem="NcY-fw-v1Q" secondAttribute="bottom" constant="44" id="5pX-0f-Epw"/>
+                            <constraint firstItem="G3l-cf-Qx6" firstAttribute="centerX" secondItem="N8Z-cR-6xj" secondAttribute="centerX" id="QSX-7s-g2I"/>
+                            <constraint firstItem="NcY-fw-v1Q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Uu3-Ig-wM5"/>
+                            <constraint firstItem="G3l-cf-Qx6" firstAttribute="top" secondItem="N8Z-cR-6xj" secondAttribute="bottom" constant="39" id="YOJ-xL-Z9a"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="G3l-cf-Qx6" secondAttribute="bottom" constant="56" id="dV2-GH-7Wy"/>
+                            <constraint firstItem="g3g-d8-gww" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="139" id="dgV-tS-4Mf"/>
+                            <constraint firstItem="NcY-fw-v1Q" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="13" id="qhs-G0-QCP"/>
+                            <constraint firstAttribute="trailing" secondItem="NcY-fw-v1Q" secondAttribute="trailing" constant="20" symbolic="YES" id="raV-F0-JQw"/>
+                            <constraint firstItem="N8Z-cR-6xj" firstAttribute="leading" secondItem="NcY-fw-v1Q" secondAttribute="leading" id="sXj-1V-PeX"/>
+                            <constraint firstItem="NcY-fw-v1Q" firstAttribute="trailing" secondItem="N8Z-cR-6xj" secondAttribute="trailing" id="uTt-lu-GT8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnItemStart" destination="G3l-cf-Qx6" id="Q6G-AP-efl"/>
+                        <outlet property="lblCurrentStatus" destination="N8Z-cR-6xj" id="xP8-pe-31m"/>
+                        <outlet property="viewPreview" destination="NcY-fw-v1Q" id="S4X-GY-cxr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gOC-Nu-cR8">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="vXZ-lx-hvc" id="h1O-wJ-e0H"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
